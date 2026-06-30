@@ -11,11 +11,12 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "svelte-kit sync && svelte-package",
     "dev": "vite dev",
-    "build": "vite build && pnpm package",
+    "build": "pnpm package",
+    "build:preview": "vite build",
     "package": "svelte-kit sync && svelte-package && publint",
-    "prepublishOnly": "pnpm package"
+    "prepublishOnly": "pnpm package",
+    "prepare": "svelte-kit sync && svelte-package"
   },
   "packageManager": "pnpm@11.5.1",
   "exports": {
