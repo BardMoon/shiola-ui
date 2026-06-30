@@ -4,19 +4,19 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - release
 
 jobs:
   build-package:
     runs-on:
-      - native
+      - ubuntu-latest
     steps:
       - run: pnpm install
       - run: pnpm build
 
   deploy-preview:
     runs-on:
-      - native
+      - ubuntu-latest
     steps:
       - run: pnpm install
       - run: pnpm build:preview
