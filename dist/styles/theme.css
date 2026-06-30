@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --indent-size: clamp(0.45rem, 5cqw, 0.875rem);
+  --scrollbar-size: 8px;
+  --opacity-button-disabled: 0.5;
+  --border-radius: 3px;
+
+  /* --- Breeze Dark --- */
+  --color-highlight: var(--color-primary);
+  --color-primary: #3daee9;
+  /* Hover */
+  --color-primary-level1: rgb(from var(--color-primary) r g b / 10%);
+  /* Selected */
+  --color-primary-level2: rgb(from var(--color-primary) r g b / 25%);
+  /* Selected Hover */
+  --color-primary-level3: rgb(from var(--color-primary) r g b / 50%);
+  /* Pressing */
+  --color-primary-level4: rgb(from var(--color-primary) r g b / 100%);
+
+  --color-sub: #7bbfdc;
+  --color-muted: #6e8a97;
+  --color-caution: #e74c3c;
+  --color-caution-level1: rgb(from var(--color-caution) r g b / 10%);
+  --color-caution-level2: rgb(from var(--color-caution) r g b / 25%);
+  --color-caution-level3: rgb(from var(--color-caution) r g b / 50%);
+  --color-caution-level4: rgb(from var(--color-caution) r g b / 100%);
+
+  --color-bg: #232629;
+  --color-view: #1b1e20;
+  --color-surface: #2a2e32;
+  --color-border: #3d4146;
+  --color-border-subtle: #2f3439;
+
+  --color-text: #eff0f1;
+  --color-text-sub: #7f8c8d;
+  --color-text-muted: #7f8c8d;
+  --color-text-disabled: #4d5157;
+  --color-text-inverse: #1a1d20;
+
+  --color-folder: #f0c000;
+  --color-folder-open: #f0a800;
+  --color-file: #7f8c8d;
+  --color-guide: #3d4146;
+}
+
+/* --- Breeze Light --- */
+/*@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #eff0f1;
+    --color-view: #ffffff;
+    --color-surface: #fcfcfc;
+    --color-border: #bdc3c7;
+    --color-border-subtle: #e3e5e7;
+
+    --color-text: #232629;
+    --color-text-muted: #7f8c8d;
+    --color-text-disabled: #bdc3c7;
+
+    --color-highlight: #3daee9;
+    --color-hover-bg: rgba(61, 174, 233, 0.1);
+    --color-hover-border: rgba(61, 174, 233, 0.35);
+    --color-selected-bg: rgba(61, 174, 233, 0.2);
+    --color-selected-border: #3daee9;
+    --color-pressed-bg: #3daee9;
+    --color-pressed-border: #2196c4;
+
+    --color-folder: #f0c000;
+    --color-folder-open: #f0a800;
+    --color-file: #7f8c8d;
+    --color-guide: #bdc3c7;
+  }
+}*/
+
+/* Scrollbar */
+* {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--color-selected-bg) var(--color-view);
+}
+/* WebKit（Chrome, Safari, Edge） */
+::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+::-webkit-scrollbar-track {
+  background: var(--color-view);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-highlight);
+  border-radius: calc(var(--scrollbar-size) / 2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pressed-bg);
+}
+::-webkit-scrollbar-corner {
+  background: var(--color-view);
+}

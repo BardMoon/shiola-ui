@@ -16,7 +16,6 @@ vite.config.ts.timestamp-*
 build
 result
 target
-dist
 
 *storybook.log
 storybook-static
