@@ -5,7 +5,6 @@ mkShell {
     pnpm
   ];
 
-
   shellHook = ''
     echo "🧪 pnpm!"
   '';

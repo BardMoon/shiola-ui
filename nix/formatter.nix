@@ -18,7 +18,11 @@ let
       biome.enable = true;
     };
     settings = {
-      global.excludes = [ ]; # https://github.com/numtide/treefmt-nix/issues/171
+      global.excludes = [
+        "**/*.lock"
+        "**/pnpm-lock.yaml"
+        "**/package-lock.json"
+      ]; # https://github.com/numtide/treefmt-nix/issues/171
       prettier = {
         editorconfig = true;
         includes = [

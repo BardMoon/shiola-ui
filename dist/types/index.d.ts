@@ -1,2 +1,6 @@
+export type {
+  ButtonItemType,
+  ButtonToneType,
+  ButtonVariantType,
+} from "./button";
 export type { MenuItemType } from "./menu";
-export type { ButtonItemType, ButtonVariantType, ButtonToneType, } from "./button";

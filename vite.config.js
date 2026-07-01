@@ -1,7 +1,7 @@
+import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
 import { sveltekit } from "@sveltejs/kit/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
-import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
 
 export default defineConfig(async () => ({
   plugins: [tailwindcss(), sveltekit()],

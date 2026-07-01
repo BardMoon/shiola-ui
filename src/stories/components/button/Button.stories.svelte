@@ -31,25 +31,25 @@
 
 <Story name="Default">
   {#snippet template(args)}
-    <Button {...args}>ボタン</Button>
+    <Button {...args}>Button</Button>
   {/snippet}
 </Story>
 
 <Story name="Toggle" args={{ variant: "toggle" }}>
   {#snippet template(args)}
-    <Button {...args}>トグル</Button>
+    <Button {...args}>Toggle</Button>
   {/snippet}
 </Story>
 
 <Story name="Text" args={{ variant: "text" }}>
   {#snippet template(args)}
-    <Button {...args}>テキストリンク</Button>
+    <Button {...args}>TextLink</Button>
   {/snippet}
 </Story>
 
 <Story name="Danger" args={{ tone: "danger" }}>
   {#snippet template(args)}
-    <Button {...args}>削除</Button>
+    <Button {...args}>Delete</Button>
   {/snippet}
 </Story>
 
